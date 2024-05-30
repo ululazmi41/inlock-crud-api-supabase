@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Inlock - Simple CRUD API with Supabase
 
-## Getting Started
+This repository is created asa simple API endpoint that utilizes Supabase as its database to handle CRUD (Create, Read, Update, Delete) operations. The API is designed to provide a basic operations for managing data, allowing users to interact with the database through HTTP requests.
 
-First, run the development server:
+Please note that this repository only includes the backend implementation and does not include a frontend interface. You will need to use a tool like Postman to interact with the API.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- CRUD Operations.
+- Supabase Integration.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Configuring Supabase
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Before using the app, you nedd to have a supabase account. Then, create a database on supabase and create a table with the following name:
 
-## Learn More
+![table name](/public/table.jpeg)
 
-To learn more about Next.js, take a look at the following resources:
+and use the following data types:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![data](/public/data.jpeg)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+- Clone the repository.
+- Rename `.env.local.sample` to `.env.local`.
+- Configure the `.env.local` file.
+- Install dependencies with `npm install`.
+- Start the server using `npm run dev`.
+- Use a tool like Postman and send the HTTP requests.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Example Endpoints
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Operations will be handled through the `/api` endpoint.
+
+- /api `GET` - Retrieve records from the database.
+- /api `POST` - Creates a new record on the `posts` table.
+- /api `PUT` - Updates a specific record by id.
+- /api `DELETE` - Deletes a specific record by id.
+
+## Postman Examples
+
+Since the project does not include a frontend interface, I have made a simple Postman collections on the `Inlock.postman_collection.json` file.
+
+- Login to postman.
+- Create collections.
+- Import the `Inlock.postman_collection.json` file.
+- Run the requests.
