@@ -11,7 +11,7 @@ Please note that this repository only includes the backend implementation and do
 
 ## Configuring Supabase
 
-Before using the app, you nedd to have a supabase account. Then, create a database on supabase and create a table with the following name:
+Before using the app, make sure you have created or own a supabase account. Then, create a database on supabase and create a table with the following name:
 
 ![table name](/public/table.jpeg)
 
