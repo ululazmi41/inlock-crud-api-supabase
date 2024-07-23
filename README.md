@@ -1,6 +1,6 @@
 # Inlock - Simple CRUD API with Supabase
 
-This repository is created asa simple API endpoint that utilizes Supabase as its database to handle CRUD (Create, Read, Update, Delete) operations. The API is designed to provide a basic operations for managing data, allowing users to interact with the database through HTTP requests.
+This repository is created as a simple API endpoint that utilizes Supabase as its database to handle CRUD (Create, Read, Update, Delete) operations. The API is designed to provide a basic operations for managing data, allowing users to interact with the database through HTTP requests.
 
 Please note that this repository only includes the backend implementation and does not include a frontend interface. You will need to use a tool like Postman to interact with the API.
 
